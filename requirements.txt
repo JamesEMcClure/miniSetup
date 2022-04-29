@@ -1,0 +1,8 @@
+bellmanford==0.2.1
+wget==3.2
+mininet==2.3.0
+numpy==1.16.6
+skyfield==1.39
+networkx==2.2
+matplotlib==2.2.5
+protobuf==3.19.1
