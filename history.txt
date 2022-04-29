@@ -1,0 +1,31 @@
+sudo apt-get install git
+git clone https://github.com/mininet/mininet
+sudo -E wireshark &
+# optional to get python3
+apt-get install python3
+
+sudo update-alternatives --install /usr/bin/python /usr/bin/python3
+
+# these commands are to use python3 version of mininet
+git checkout -b mininet-2.3.0 2.3.0
+
+sudo apt-get install build-essential
+# ubuntu won't give you old pip!
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+sudo python ./get-pip.py 
+which pip
+pip --version
+sudo pip install matplotlib
+sudo pip install networkx
+sudo pip install python-tk
+sudo pip install bellmanford
+sudo pip install wget
+sudo pip install skyfield
+sudo pip install statistics
+sudo pip install protobuf
+
+# this package below seems broken in many version!
+pip install jenkspy==0.1.2
+
+# need to setup 
+export PYTHONPATH=$HOME/SimLeo_MConstellations/comm_protocol:$PYTHONPATH
